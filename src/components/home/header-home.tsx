@@ -11,10 +11,7 @@ const HeaderHome = () => {
 		<div className="home__header">
 			<div className="header__row">
 				<Button before={<AiOutlineSkin size={24} />} size='s'>Изменить скин</Button>
-				<div style={{display: "flex", gap: 10, alignItems: "center"}}>
-					<Avatar size={40} src={tg.initDataUnsafe.user?.photo_url}/>
-					<Text style={{color: "black"}} weight='2'>{tg.initDataUnsafe.user?.username}</Text>
-				</div>
+				<Text style={{color: "black"}} weight='2'>{tg.initDataUnsafe.user?.first_name}</Text>
 			</div>
 		</div>
 	)
