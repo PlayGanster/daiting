@@ -1,5 +1,5 @@
 import "@styles/components/home/home-header.scss"
-import { Avatar, Button, Text } from '@telegram-apps/telegram-ui'
+import { Button, Text } from '@telegram-apps/telegram-ui'
 import { AiOutlineSkin } from 'react-icons/ai'
 
 const tg = window.Telegram.WebApp
