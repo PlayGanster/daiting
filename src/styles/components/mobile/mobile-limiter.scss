@@ -1,0 +1,16 @@
+.mobile-limiter__wrapper {
+	background: #1d1d1d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	width: 100dvw;
+	height: 100dvh;
+
+	.wrapper__content {
+		max-width: 1024px;
+		width: 100%;
+		background: white;
+		height: 100%;
+	}
+}

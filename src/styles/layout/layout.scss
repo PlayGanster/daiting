@@ -1,0 +1,15 @@
+.layout {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	background: #EFEFF4;
+	color: white;
+
+	.layout__page {
+		width: 100%;
+		height: 100%;
+		overflow-y: auto;
+		padding-bottom: 82px;
+	}
+}
