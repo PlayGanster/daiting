@@ -4,6 +4,8 @@ import { AiOutlineSkin } from 'react-icons/ai'
 
 const tg = window.Telegram.WebApp
 
+console.log(tg.initDataUnsafe)
+
 const HeaderHome = () => {
 	return (
 		<div className="home__header">
