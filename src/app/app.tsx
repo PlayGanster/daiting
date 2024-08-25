@@ -3,11 +3,15 @@ import { BrowserRouter } from 'react-router-dom'
 import Router from "@app/router/router"
 import "@styles/default.scss"
 import MobileLimiter from '@/components/mobile/mobile-limiter'
+import { Provider } from 'react-redux'
+import { store } from '@/redux/store'
 
 createRoot(document.getElementById('root')!).render(
-	<MobileLimiter>
-		<BrowserRouter>
-			<Router />
-		</BrowserRouter>
-	</MobileLimiter>
+	<Provider store={store}>
+		<MobileLimiter>
+			<BrowserRouter>
+				<Router />
+			</BrowserRouter>
+		</MobileLimiter>
+	</Provider>
 )
