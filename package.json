@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@telegram-apps/telegram-ui": "^2.1.8",
     "@types/telegram-web-app": "^7.8.0",
     "path": "^0.12.7",
     "react": "^18.3.1",
