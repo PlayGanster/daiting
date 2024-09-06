@@ -18,15 +18,13 @@
   padding: 7.5px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.333);
-  border-bottom: 1px solid white;
   background: transparent;
   outline: none;
-  -webkit-box-shadow: 0px 0px 33px -8px rgba(255, 255, 255, 0.2);
-  -moz-box-shadow: 0px 0px 33px -8px rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 0px 33px -8px rgba(255, 255, 255, 0.2);
+  border: 2px solid #3591FE;
   color: white;
   cursor: pointer;
-  background: #04080F;
+  background: rgb(81,176,242);
+  background: linear-gradient(180deg, rgba(81,176,242,1) 0%, rgba(37,113,225,1) 100%);
   display: flex;
   justify-content: center;
   align-items: center;

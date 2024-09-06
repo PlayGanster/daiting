@@ -2,6 +2,7 @@
 	width: 100%;
 	border-bottom-left-radius: 16px;
 	border-bottom-right-radius: 16px;
+	background: #010103;
 	padding: 20px;
 
 	.header__row {
@@ -13,13 +14,18 @@
 
 	.header__profile {
 		display: flex;
-		flex-direction: column;
-		gap: 4px;
+		align-items: center;
+		gap: 10px;
 
-		.profile__level {
-			font-size: 12px;
-			color: #727F94;
-			font-weight: 600;
+		.profile__icon {
+			width: 35px;
+			height: 35px;
+			border-radius: 10px;
+			background: rgb(255,255,255);
+			background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.2) 100%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		.profile__name {
@@ -36,10 +42,49 @@
 	.header__menu {
 		display: flex;
 		gap: 10px;
+		align-items: center;
+
+		.menu-item {
+			list-style: none;
+		}
 	}
 
 	.header__row:nth-child(2) {
-		margin-top: 20px;
+		margin-top: 10px;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	.header__rang {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		.rang__this {
+			font-size: 12px;
+			font-weight: 800;
+			color: #3489FF;
+		}
+
+		.rang__next {
+			font-size: 12px;
+			font-weight: 800;
+		}
+	}
+
+	.header__rang--progress {
+		width: 100%;
+		height: 12px;
+		border-radius: 8px;
+		border: 1px solid #3489FF;
+
+		.progress__bar {
+			height: 100%;
+			width: 70%;
+			background: #3489FF;
+			border-radius: 8px;
+		}
 	}
 
 	.header__menu--block {

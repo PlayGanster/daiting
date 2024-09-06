@@ -1,10 +1,17 @@
 .home__clicker {
 	display: flex;
+	border-top: 2px solid #3489FF;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
 	flex-direction: column;
+	-webkit-box-shadow: 0px -15px 8px 0px rgba(52, 137, 255, 0.2);
+	-moz-box-shadow: 0px -15px 8px 0px rgba(52, 137, 255, 0.2);
+	box-shadow: 0px -15px 8px 0px rgba(52, 137, 255, 0.2);
 	gap: 10px;
 	padding: 0px 20px;
 	align-items: center;
-	height: calc(100% - 100px);
+	padding-bottom: 70px;
+	height: calc(100% - 20px);
 	justify-content: space-between;
 
 	.clicker__header {
@@ -21,53 +28,121 @@
 
 	.clicker__footer {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
 		width: 100%;
 
-		.footer__energy {
+		.footer__wrapper {
+			border-radius: 15px;
+			border: 2px solid #58299D;
+			background: rgb(51,26,108);
+			background: linear-gradient(0deg, rgba(51,26,108,1) 0%, rgba(71,15,152,1) 100%);
+			max-width: 400px;
+			width: 100%;
+			height: 50px;
 			display: flex;
-			gap: 5px;
-			align-items: center;
 
-			.energy__amount {
-				font-size: 18px;
-				font-weight: 500;
+			.wrapper-item {
+				height: 100%;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
-		}
 
-		.footer__boost {
-			display: flex;
-			gap: 5px;
-			cursor: pointer;
-			align-items: center;
+			.wrapper__energy {
+				border-right: 1px solid #58299D;
+				width: 55%;
+				display: flex;
+				gap: 5px;
+				cursor: pointer;
 
-			.boost__name {
-				font-size: 18px;
-				font-weight: 500;
+				.energy__amount {
+					display: flex;
+
+					.amount__text--all {
+						font-weight: 700;
+						font-size: 16px;
+					}
+
+					.amount__text--this {
+						font-weight: 700;
+						font-size: 16px;
+					}
+				}
+			}
+
+			.wrapper__boost {
+				border-left: 1px solid #58299D;
+				width: 45%;
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				cursor: pointer;
+
+				.boost__name {
+					font-size: 16px;
+					font-weight: 600;
+				}
 			}
 		}
 	}
 }
 
-@media only screen and (max-width: 576px) {
-	.home__clicker {
-		height: calc(100% - 70px);
+@media only screen and (max-height: 600px) {
+
+	.home__clicker .clicker__footer .footer__wrapper .wrapper__boost .boost__name {
+		font-size: 14px;
+	}
+
+	.home__clicker .clicker__footer .footer__wrapper .wrapper__energy .energy__amount .amount__text--all {
+		font-size: 14px;
+	}
+
+	.home__clicker .clicker__footer .footer__wrapper .wrapper__energy .energy__amount .amount__text--this {
+		font-size: 14px;
+	}
+
+	.home__clicker .clicker__footer .footer__wrapper .wrapper-item svg{
+		width: 24px;
+	}
+
+	.home__clicker .clicker__footer {
+		height: 45px;
+	}
+	.home__clicker .clicker__footer .footer__wrapper {
+		height: 45px;
 	}
 }
 
 @media only screen and (max-width: 576px) {
-	.home__clicker .clicker__footer .footer__boost .boost__name {
+
+	.home__clicker .clicker__footer .footer__wrapper .wrapper__boost .boost__name {
 		font-size: 14px;
 	}
-	.home__clicker .clicker__footer .footer__energy .energy__amount {
+
+	.home__clicker .clicker__footer .footer__wrapper .wrapper__energy .energy__amount .amount__text--all {
 		font-size: 14px;
 	}
-	.home__clicker .clicker__footer .footer__energy svg {
-		width: 20px;
+
+	.home__clicker .clicker__footer .footer__wrapper .wrapper__energy .energy__amount .amount__text--this {
+		font-size: 14px;
 	}
-	.home__clicker .clicker__footer .footer__boost svg {
-		width: 20px;
+
+	.home__clicker .clicker__footer .footer__wrapper .wrapper-item svg{
+		width: 24px;
 	}
+
+	.home__clicker .clicker__footer {
+		height: 45px;
+	}
+	.home__clicker .clicker__footer .footer__wrapper {
+		height: 45px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
 	.home__clicker .clicker__header .header__amount {
 		font-size: 24px;
 	}
@@ -77,18 +152,6 @@
 }
 
 @media only screen and (max-height: 600px) {
-	.home__clicker .clicker__footer .footer__boost .boost__name {
-		font-size: 14px;
-	}
-	.home__clicker .clicker__footer .footer__energy .energy__amount {
-		font-size: 14px;
-	}
-	.home__clicker .clicker__footer .footer__energy svg {
-		width: 20px;
-	}
-	.home__clicker .clicker__footer .footer__boost svg {
-		width: 20px;
-	}
 	.home__clicker .clicker__header .header__amount {
 		font-size: 24px;
 	}

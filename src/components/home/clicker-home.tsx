@@ -1,7 +1,8 @@
 import "@styles/components/home/home-clicker.scss"
-import { FaAngleDoubleUp } from 'react-icons/fa'
-import { SlEnergy } from 'react-icons/sl'
 import { TbCoinFilled } from 'react-icons/tb'
+import ClickerAvatar from './clicker-avatar'
+import { MdEnergySavingsLeaf } from 'react-icons/md'
+import { IoRocket } from 'react-icons/io5'
 
 const ClickerHome = () => {
 	return (
@@ -11,16 +12,21 @@ const ClickerHome = () => {
 				<p className="header__amount">1,000,000</p>
 			</div>
 			<div className="clicker__player">
-				PLAYER
+				<ClickerAvatar />
 			</div>
 			<div className="clicker__footer">
-				<div className="footer__energy">
-					<SlEnergy size={22} />
-					<p className="energy__amount">5000 / 5000</p>
-				</div>
-				<div className="footer__boost">
-					<FaAngleDoubleUp size={22} />
-					<p className="boost__name">Улучшить</p>
+				<div className="footer__wrapper">
+					<div className="wrapper__energy wrapper-item">
+						<MdEnergySavingsLeaf size={26} color='#F5B64D' />
+						<div className="energy__amount">
+							<p className="amount__text--all">5000/</p>
+							<p className="amount__text--this">5000</p>
+						</div>
+					</div>
+					<div className="wrapper__boost wrapper-item">
+						<p className="boost__name">Улучшить</p>
+						<IoRocket size={26} color='#56C6F8' />
+					</div>
 				</div>
 			</div>
 		</div>
