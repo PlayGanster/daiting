@@ -1,7 +1,8 @@
 const ClickerAvatar = () => {
-
 	return (
-		<canvas />
+		<div>
+			Avatar
+		</div>
 	)
 }
 

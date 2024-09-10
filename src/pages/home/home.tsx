@@ -1,12 +1,16 @@
-import ClickerHome from '@/components/home/clicker-home'
-import HeaderHome from '@/components/home/header-home'
+import HomeClicker from '@/components/home/home-clicker'
+import HomeHeader from '@/components/home/home-header'
+import HomeSettings from '@/components/home/home-settings'
+import { useAppSelector } from '@/redux/store'
 
 const Home = () => {
+	const home = useAppSelector(state => state.home)
 
 	return (
-		<div className='scroll--novisible' style={{width: "100%", height: "100%",}}>
-			<HeaderHome />
-			<ClickerHome />
+		<div style={{width: "100%", height: "100%", position: "relative"}}>
+			<HomeHeader />
+			<HomeClicker />
+			{home.settings_open ? (<HomeSettings />) : ""}
 		</div>
 	)
 }

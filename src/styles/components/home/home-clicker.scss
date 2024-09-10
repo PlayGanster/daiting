@@ -1,161 +1,79 @@
 .home__clicker {
+	padding: 20px;
+	border-top-left-radius: 32px;
+	border-top-right-radius: 32px;
+	border-top: 2px solid #866F9B;
+	-webkit-box-shadow: 0px -14px 10px 0px rgba(134, 111, 155, 0.2);
+	-moz-box-shadow: 0px -14px 10px 0px rgba(134, 111, 155, 0.2);
+	box-shadow: 0px -14px 10px 0px rgba(134, 111, 155, 0.2);
+	width: 100%;
+	height: calc(100dvh - 174px);
 	display: flex;
-	border-top: 2px solid #3489FF;
-	border-top-left-radius: 50px;
-	border-top-right-radius: 50px;
 	flex-direction: column;
-	-webkit-box-shadow: 0px -15px 8px 0px rgba(52, 137, 255, 0.2);
-	-moz-box-shadow: 0px -15px 8px 0px rgba(52, 137, 255, 0.2);
-	box-shadow: 0px -15px 8px 0px rgba(52, 137, 255, 0.2);
-	gap: 10px;
-	padding: 0px 20px;
-	align-items: center;
-	padding-bottom: 70px;
-	height: calc(100% - 20px);
 	justify-content: space-between;
+	align-items: center;
 
-	.clicker__header {
-		display: flex;
-		gap: 5px;
-		align-items: center;
-		width: 100%;
-
-		.header__amount {
-			font-size: 32px;
-			font-weight: 700;
-		}
-	}
-
-	.clicker__footer {
+	.clicker__amount--coin {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 50px;
+		width: 100%;
+		gap: 10px;
+
+		.coin__icon {
+			width: 52px;
+		}
+
+		.coin__amount {
+			font-size: 32px;
+			font-weight: 800;
+		}
+	}
+
+	.clicker__user--stamin {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 100%;
 
-		.footer__wrapper {
-			border-radius: 15px;
-			border: 2px solid #58299D;
-			background: rgb(51,26,108);
-			background: linear-gradient(0deg, rgba(51,26,108,1) 0%, rgba(71,15,152,1) 100%);
+		.stamin__content {
 			max-width: 400px;
 			width: 100%;
 			height: 50px;
+			border-radius: 16px;
+			border: 2px solid #2C2037;
 			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #130A1B;
 
-			.wrapper-item {
+			.content-item {
+				cursor: pointer;
+				gap: 5px;
+
+				.item__name {
+					font-size: 14px;
+					font-weight: 700;
+				}
+			}
+
+			.content-item:nth-child(1){
+				width: 60%;
 				height: 100%;
-				width: 100%;
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				border-right: 1px solid #2C2037;
 			}
 
-			.wrapper__energy {
-				border-right: 1px solid #58299D;
-				width: 55%;
+			.content-item:nth-child(2){
+				width: 40%;
+				height: 100%;
 				display: flex;
-				gap: 5px;
-				cursor: pointer;
-
-				.energy__amount {
-					display: flex;
-
-					.amount__text--all {
-						font-weight: 700;
-						font-size: 16px;
-					}
-
-					.amount__text--this {
-						font-weight: 700;
-						font-size: 16px;
-					}
-				}
-			}
-
-			.wrapper__boost {
-				border-left: 1px solid #58299D;
-				width: 45%;
-				display: flex;
+				justify-content: center;
 				align-items: center;
-				gap: 5px;
-				cursor: pointer;
-
-				.boost__name {
-					font-size: 16px;
-					font-weight: 600;
-				}
+				border-left: 1px solid #2C2037;
 			}
 		}
-	}
-}
-
-@media only screen and (max-height: 600px) {
-
-	.home__clicker .clicker__footer .footer__wrapper .wrapper__boost .boost__name {
-		font-size: 14px;
-	}
-
-	.home__clicker .clicker__footer .footer__wrapper .wrapper__energy .energy__amount .amount__text--all {
-		font-size: 14px;
-	}
-
-	.home__clicker .clicker__footer .footer__wrapper .wrapper__energy .energy__amount .amount__text--this {
-		font-size: 14px;
-	}
-
-	.home__clicker .clicker__footer .footer__wrapper .wrapper-item svg{
-		width: 24px;
-	}
-
-	.home__clicker .clicker__footer {
-		height: 45px;
-	}
-	.home__clicker .clicker__footer .footer__wrapper {
-		height: 45px;
-	}
-}
-
-@media only screen and (max-width: 576px) {
-
-	.home__clicker .clicker__footer .footer__wrapper .wrapper__boost .boost__name {
-		font-size: 14px;
-	}
-
-	.home__clicker .clicker__footer .footer__wrapper .wrapper__energy .energy__amount .amount__text--all {
-		font-size: 14px;
-	}
-
-	.home__clicker .clicker__footer .footer__wrapper .wrapper__energy .energy__amount .amount__text--this {
-		font-size: 14px;
-	}
-
-	.home__clicker .clicker__footer .footer__wrapper .wrapper-item svg{
-		width: 24px;
-	}
-
-	.home__clicker .clicker__footer {
-		height: 45px;
-	}
-	.home__clicker .clicker__footer .footer__wrapper {
-		height: 45px;
-	}
-}
-
-@media only screen and (max-width: 576px) {
-	.home__clicker .clicker__header .header__amount {
-		font-size: 24px;
-	}
-	.home__clicker .clicker__header svg{
-		width: 26px;
-	}
-}
-
-@media only screen and (max-height: 600px) {
-	.home__clicker .clicker__header .header__amount {
-		font-size: 24px;
-	}
-	.home__clicker .clicker__header svg{
-		width: 26px;
 	}
 }

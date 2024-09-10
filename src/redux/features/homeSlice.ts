@@ -1,24 +1,24 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 
-type SelectBlock = number
+type SettingsOpen = boolean
 
 interface HomeState {
-	select_block: SelectBlock
+	settings_open: SettingsOpen
 }
 
 const initialState: HomeState = {
-	select_block: 1
+	settings_open: false
 }
 
 export const HomeSlice = createSlice({
 	name: 'user',
 	initialState,
 	reducers: {
-		setSelectBlock: (state, action:PayloadAction<{data: number}>) => {
-			state.select_block = action.payload.data
+		setSettingsOpen: (state, action:PayloadAction<{data: boolean}>) => {
+			state.settings_open = action.payload.data
 		},
 	}
 })
 
 export default HomeSlice.reducer
-export const {setSelectBlock} = HomeSlice.actions
+export const {setSettingsOpen} = HomeSlice.actions
