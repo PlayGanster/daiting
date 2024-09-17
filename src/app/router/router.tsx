@@ -1,4 +1,4 @@
-import { RouterList, RouterListType } from '@/data/router/router'
+import { RouterList, RouterListTypeNo } from '@/data/router/router'
 import Layout from "@app/layout/layout"
 import { Suspense, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
@@ -14,7 +14,7 @@ const Router = () => {
 	return (
 		<Routes>
 			{
-				RouterList && RouterList.map((item: RouterListType, index: number) => (
+				RouterList && RouterList.map((item: RouterListTypeNo, index: number) => (
 					<Route path={item.path} key={index} element={<Suspense fallback={"loading..."}><Layout><item.page /></Layout></Suspense>} />
 				))
 			}

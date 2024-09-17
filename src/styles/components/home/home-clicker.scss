@@ -30,6 +30,36 @@
 		}
 	}
 
+	.clicker__statistic--user {
+		display: flex;
+		gap: 15px;
+		justify-content: center;
+		align-items: center;
+		margin-top: 10px;
+
+		.statistic-item {
+			display: flex;
+			gap: 5px;
+			align-items: center;
+
+			.item__icon {
+				width: 30px;
+			}
+
+			.item__value {
+				font-size: 18px;
+				font-weight: 600;
+			}
+		}
+
+		.statistic__point {
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background: white;
+		}
+	}
+
 	.clicker__user--stamin {
 		display: flex;
 		justify-content: center;
@@ -75,5 +105,12 @@
 				border-left: 1px solid #2C2037;
 			}
 		}
+	}
+}
+
+@media only screen and (max-height: 600px) {
+	.home__clicker {
+		min-height: 550px;
+		padding-bottom: 70px;
 	}
 }

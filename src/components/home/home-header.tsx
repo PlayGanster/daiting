@@ -1,13 +1,10 @@
-import { setSettingsOpen } from '@/redux/features/homeSlice'
-import { useAppDispatch } from '@/redux/store'
 import "@styles/components/home/home-header.scss"
 import { IoMdSettings } from 'react-icons/io'
+import { Link } from 'react-router-dom'
 
 const tg = window.Telegram
 
 const HomeHeader = () => {
-	const dispatch = useAppDispatch()
-
 	return (
 		<div className="home__header">
 			<div className="header-row">
@@ -23,7 +20,7 @@ const HomeHeader = () => {
 					</p>
 				</div>
 				<ul className="header__menu">
-					<li className="menu-item" onClick={() => {dispatch(setSettingsOpen({data: true}))}}><IoMdSettings size={22} /></li>
+					<Link to="/settings"><li className="menu-item"><IoMdSettings size={22} /></li></Link>
 				</ul>
 			</div>
 			<div className="header-row">

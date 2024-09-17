@@ -1,4 +1,4 @@
-import { RouterList, RouterListType } from '@/data/router/router'
+import { RouterListMenu, RouterListType } from '@/data/router/router'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import "@styles/components/layout/layout-navbar.scss"
@@ -7,7 +7,7 @@ const LayoutNavbar = () => {
 	const [menu, setMenu] = useState<RouterListType[]>([]);
 
 	useEffect(() => {
-		const copy: RouterListType[] = [...RouterList];
+		const copy: RouterListType[] = [...RouterListMenu];
 		copy.filter((item: RouterListType) => {
 			if(item.path === location.pathname) item.active = true
 			else item.active = false

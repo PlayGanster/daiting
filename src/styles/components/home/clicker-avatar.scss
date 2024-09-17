@@ -1,0 +1,27 @@
+.avatar__wrapper {
+	max-width: 400px;
+	width: 100%;
+
+	.wrapper__content {
+		display: flex;
+		background: transparent;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+
+		.content-menu {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			padding: 0px 20px;
+
+			.menu-item {
+				list-style: none;
+				.item__icon {
+					width: 40px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
