@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 const Home = () => {	
 
 	useEffect(() => {
-		tg.headerColor = "#00FF00"
+		tg.headerColor = "#06000E"
 		tg.BackButton.hide()
 	}, [])
 
