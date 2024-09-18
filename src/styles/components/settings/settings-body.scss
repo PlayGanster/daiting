@@ -41,7 +41,7 @@
 	.body__switches {
 		display: flex;
 		flex-direction: column;
-		gap: 10px;
+		gap: 20px;
 		margin-top: 20px;
 
 		.switches-item {
@@ -97,5 +97,11 @@
 				width: 30px;
 			}
 		}
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.settings-body .body__switches .switches-item .item__name {
+		font-size: 14px;
 	}
 }

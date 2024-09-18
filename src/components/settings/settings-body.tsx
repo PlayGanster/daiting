@@ -60,7 +60,7 @@ const SettingsBody = () => {
 			<div className="body__switches">
 				{
 					SettingsSwitches && SettingsSwitches.map((el:SettingsSwitchesType, index: number) => (
-						<div className="switches-item"><p className="item__name">{el.name}</p><div><input type="checkbox" id={el.name} key={index}/><label htmlFor={el.name}>{el.name}</label></div></div>
+						<div className="switches-item"><p className="item__name">{el.name}</p><div style={{display: "flex", alignItems: "center"}}><input type="checkbox" id={el.name} key={index}/><label htmlFor={el.name}>{el.name}</label></div></div>
 					))
 				}
 			</div>
