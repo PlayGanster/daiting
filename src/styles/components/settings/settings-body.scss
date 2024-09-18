@@ -1,0 +1,40 @@
+.settings-body {
+	padding: 20px;
+
+	.body__list {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		.list-item {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			padding: 20px;
+			height: 60px;
+			border-radius: 16px;
+			background: #130A1B;
+			border: 2px solid #2C2037;
+			align-items: center;
+			cursor: pointer;
+
+			.item__left {
+				display: flex;
+				flex-direction: column;
+				gap: 5px;
+
+				.left__name {
+					font-size: 16px;
+					color: #FEC64F;
+					font-weight: 700;
+				}
+
+				.left__value {
+					font-size: 14px;
+					color: white;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
