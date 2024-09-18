@@ -1,0 +1,16 @@
+.list-select__wrapper {
+	width: 100dvw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: black;
+	height: 100dvh;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.wrapper__content {
+		background: #06000E;
+	}
+}
