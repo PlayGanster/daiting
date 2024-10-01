@@ -1,0 +1,46 @@
+.home-header {
+    width: 100%;
+    padding: 20px;
+
+    .header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-row:nth-child(2) {
+        margin-top: 10px;
+    }
+
+    .header-row:nth-child(3) {
+        margin-top: 10px;
+    }
+
+    .header__user {
+        font-size: 15px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .header__level {
+        font-size: 15px;
+        color: #866F9B;
+        font-weight: 800;
+    }
+
+    .header__progress {
+        width: 100%;
+        height: 12px;
+        border-radius: 16px;
+        background: #211C28;
+        overflow: hidden;
+
+        .progress__bar {
+            width: 70%;
+            height: 100%;
+			background: rgb(254,198,79);
+			background: linear-gradient(148deg, rgba(254,198,79,1) 0%, rgba(134,111,155,1) 85%);
+        }
+    }
+}

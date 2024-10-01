@@ -1,22 +1,14 @@
-import HomeClicker from '@/components/home/home-clicker'
-import HomeHeader from '@/components/home/home-header'
-import { useEffect } from 'react'
+import HomeContent from "@/components/pages/home/home-content"
+import HomeHeader from "@/components/pages/home/home-header"
+import "@styles/pages/home/home.scss"
 
-	const tg = window.Telegram.WebApp
-
-const Home = () => {	
-
-	useEffect(() => {
-		tg.headerColor = "#06000E"
-		tg.BackButton.hide()
-	}, [])
-
-	return (
-		<>
-			<HomeHeader />
-			<HomeClicker />
-		</>
-	)
+const Home = () => {
+  return (
+    <div className="home-page">
+        <HomeHeader />
+        <HomeContent />
+    </div>
+  )
 }
 
 export default Home

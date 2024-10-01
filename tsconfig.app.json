@@ -20,16 +20,16 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "./src",
-      "paths": {
-        "@/*": ["./*"],
-        "@app/*": ["./app/*"],
-        "@styles/*": ["./styles/*"],
-        "@components/*": ["./components/*"],
-        "@data/*": ["./data/*"],
-        "@pages/*": ["./pages/*"],
-        "@redux/*": ["./redux/*"],
-        "@assets/*": ["./assets/*"]
-      }
+    "paths": {
+    "@/*": ["./*"],
+    "@app/*": ["./app/*"],
+    "@styles/*": ["./styles/*"],
+    "@components/*": ["./components/*"],
+    "@data/*": ["./data/*"],
+    "@pages/*": ["./pages/*"],
+    "@redux/*": ["./redux/*"],
+    "@assets/*": ["./assets/*"]
+    }
   },
   "include": ["src"]
 }

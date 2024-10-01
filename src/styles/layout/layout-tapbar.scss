@@ -1,0 +1,48 @@
+.layout-tapbar {
+    width: 100%;
+    height: 55px;
+    background: #130A1B;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-top: 2px solid #2C2037;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tapbar__list {
+        display: flex;
+        gap: 5px;
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px 12px;
+            border-radius: 16px;
+
+            svg {
+                fill: #866F9B;
+            }
+
+            .item__name {
+                font-size: 14px;
+                display: none;
+                color: #866F9B;
+            }
+        }
+
+        .list-item.--active {
+            background: #FEC64F;
+
+            svg {
+                fill: #000000;
+            }
+
+            .item__name {
+                display: block;
+                color: #000000;
+            }
+        }
+    }
+}

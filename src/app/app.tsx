@@ -1,17 +1,19 @@
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
-import Router from "@app/router/router"
+import Router from './router/router'
 import "@styles/default.scss"
-import MobileLimiter from '@/components/mobile/mobile-limiter'
-import { Provider } from 'react-redux'
-import { store } from '@/redux/store'
+import MobileLimiter from '@/components/mobile-limiter/mobile-limiter'
+import Layout from './layout/layout'
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')!).render(
-	<Provider store={store}>
-		<MobileLimiter>
-			<BrowserRouter>
-				<Router />
-			</BrowserRouter>
-		</MobileLimiter>
-	</Provider>
+  <StrictMode>
+    <BrowserRouter>
+        <MobileLimiter>
+            <Layout>
+                <Router />
+            </Layout>
+        </MobileLimiter>
+    </BrowserRouter>
+  </StrictMode>,
 )

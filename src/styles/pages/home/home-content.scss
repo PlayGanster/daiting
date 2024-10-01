@@ -1,0 +1,103 @@
+.home-content {
+    padding: 20px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-top: 2px solid #866F9B;
+	-webkit-box-shadow: 0px -14px 10px 0px rgba(134, 111, 155, 0.2);
+	-moz-box-shadow: 0px -14px 10px 0px rgba(134, 111, 155, 0.2);
+	box-shadow: 0px -14px 10px 0px rgba(134, 111, 155, 0.2);
+    height: calc(100dvh - 175px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    .content__data {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+        .data-coin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            .coin__img {
+                width: 52px;
+            }
+
+            .coin__amount {
+                font-size: 32px;
+                font-weight: 800;
+            }
+        }
+
+        .data-statistic {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            .statistic-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+
+                .item__icon {
+                    width: 34px;
+                }
+
+                .item__amount {
+                    font-size: 18px;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+    .content__boost {
+        max-width: 400px;
+        width: 100%;
+        border-radius: 16px;
+        border: 2px solid #2C2037;
+        display: flex;
+        justify-content: space-between;
+        background: #130A1B;
+        min-height: 50px;
+
+        .boost-item:nth-child(1) {
+            width: 55%;
+            border-right: 1px solid #2C2037;
+        }
+
+        .boost-item:nth-child(2) {
+            width: 45%;
+            border-left: 1px solid #2C2037;
+        }
+
+        .boost-item {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+
+            .item__name {
+                font-size: 15px;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .home-content {
+        height: 550px;
+    }
+}
